@@ -1,0 +1,37 @@
+'''  Code was wrote for the understanding of the 
+     basics of uses of matplotlib library
+'''
+
+import matplotlib.pyplot as plt
+
+#Simple Plot
+fig,ax = plt.subplots()
+ax.plot(int, int)
+ax.set (xlabel = 'time(s)' , ylabel = ' ', title = ' ' )
+ax.grid ()                                                    #grid layout on figure
+fig.savefig (" ")                                             #save the figure
+plt.Show()
+
+#To produce multiple figures (SUBPLOTS) 
+fig, axes = plt.subplots( nrows = int, ncols = int, figsize = (int, int) )
+axes [0,0].set_title("Signal")
+axes [0,0].plot (int, int, color = ' ')
+axes [0,0].set_xlabel ("Time")
+axes [0,0].set_ylabel ("Amplitude")
+
+# reference other plots by changing axes matrix
+axes [1,1].set_title (" ")
+axes [1,0].magnitude_spectrum (S, Fs = FS, color = 'C1')
+
+plt.show()
+
+#BAR PLOT EXAMPLE
+fig, ax = plt.subplots()
+rects1 = ax.bar (list for x, list for y, width of the bars, color = 'string' , label = 'string' )
+rects2 = ax.bar (ist for x, list for y, width of the bars, color = 'string' , label = 'string' )
+ax.set_ylabel(' ')
+ax.set_title(' ')
+ax.set_xtick ( )
+ax.set_xticklabels( (' ', ' ', ' ', ... ) )
+ax.legend( )
+plt.show( )
